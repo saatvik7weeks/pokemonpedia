@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap') ;
+
+/* Header Styling */
+*{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: linear-gradient(45deg , rgb(62, 179, 237) , rgb(109, 244, 109));
+}
+.header{
+    width: 100% ;
+    text-align: center;
+    margin:2rem 0 5rem 0 ; 
+
+}
+.header h1{
+    font-size: 2.5rem;
+}
+.header img{
+    width: 200px;
+    height: 200px;
+}
+
+.main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Boxes Styling */
+.main-container{
+    display: flex ;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap : 1rem 2rem
+
+}
+.boxes {
+    width: 30% ; 
+    height: 500px;
+    border:2px solid grey ;
+    border-radius: 1rem;
+    transition: all 0.6s ease-out;
+}
+.boxes:hover{
+    box-shadow: 10px 10px 25px grey;
+    /* background: linear-gradient(45deg , rgb(239, 239, 136) , rgb(102, 244, 102)); */
+    background: linear-gradient(45deg , rgb(242, 242, 116) , rgb(244, 156, 144));
+}
+.boxes > h1{
+    text-align: center;
+}
+.boxes img{
+    width: 250px ;
+    height: 250px;
+    margin:1rem auto;
+    display: block;
+}
+.boxes > button{
+    display: block;
+    margin: 2rem auto ; 
+    background-color: rgb(99, 133, 245);
+    color:white ; 
+    padding: 1.1rem 4rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-out;
+}
+.boxes > button:hover{
+    background-color: rgb(47, 93, 244);
+    box-shadow: 5px 5px 15px rgb(104, 104, 104);
+}
+
+
+
+/* Dialog Box styling */
+dialog{
+    width: 50vw; 
+    background: linear-gradient(45deg , rgb(103, 219, 103) , rgb(98, 199, 230));
+}
+dialog::backdrop{
+    backdrop-filter: blur(5px);
+    background: rgba(31, 31, 31, 0.03);
+    
+}
+dialog button{
+    display: block;
+    margin: 5rem auto 0rem auto ; 
+    padding: 1.1rem 4rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background-color: rgb(234, 92, 92);
+    color:white ;
+    border: none;
+    transition: all 0.2s ease-out;
+}
+dialog button:hover{
+    background-color: rgb(250, 26, 26);
+    box-shadow: 5px 5px 15px black;
+}
+.dialog-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    margin: 2rem auto ; 
+}
+.dialog-box img{
+    width: 250px;
+    height: 250px;
+}
